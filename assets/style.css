@@ -71,11 +71,11 @@ h1{
     margin-left:    100px;
 }
 
-#head-text{
+.head-text{
     margin: 2% auto 0px 12%;
 }
 
-#paragraphs{
+.paragraphs{
     margin:     auto;
     padding:    10px;
     max-width:  60vw;
