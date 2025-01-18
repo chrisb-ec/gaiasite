@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/navbar.css">
+    <title>GAIA - Contact</title>
+</head>
+<body>
+    <div id="heading">
+        <div id="logo">
+            <a href="index.html"><img src="assets/images/weblogo.png" alt="GAIA logo" onmouseover="mouseRollover(this)" onmouseout="mouseOut(this)"></a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="activism.html">Activism</a></li>
+                <li><a href="recycling.html">Recycling</a></li>
+                <li><a href="pollution.html">Pollution</a></li>
+                <li><a href="climate.html">Climate</a></li>
+                <li><a href="contact.html" id="currentPage">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <h1 id="contact-head">GET IN TOUCH</h1>
+    <div id="contact-form">
+        <form action="mailto:person@example.com?subject=GAIA Contact" method="post" enctype="text/plain"><!-- opening form tag -->
+            <div class="form-group">
+                <label>Name:</label>
+                <textarea class="form-field" name="Name" rows="1" cols="40" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>E-mail address:</label>
+                <textarea class="form-field" name="E-mail" rows="1" cols="40" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Your message:</label>
+                <textarea class="form-field" name="Message" rows="3" minlength="2" cols="40" required></textarea>
+            </div>
+            <br><br>
+            <div class="form-group">
+                <input type="submit" value="Send" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+    <a href="attributions.html" id="attr-link">Attributions</a>
+    <script src="assets/rollover.js"></script>
+</body>
+</html>

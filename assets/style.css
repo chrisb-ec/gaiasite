@@ -1,0 +1,167 @@
+/* The base stylesheet that every page will use */
+
+body{
+    font-family:    sans-serif;
+    margin:         0;              /* remove margins and padding so I can use the full page*/
+    padding:        0;
+    position:       relative;       /* lets the footer stick to the bottom */
+    min-height:     100vh;
+}
+
+#heading{
+    min-height:         80px;
+    display:            flex;       /* lets the navbar be next to the logo*/
+    background-color:   #86bbf8;
+    position:           relative;   /* lets the navbar go under the logo when the screen a certain width */
+}
+
+#logo{
+    margin: auto 0 auto 10px;   /* position logo nicely */
+}
+
+#logo img{
+    transition: 500ms;  /* transition for when it grows and shrinks */
+    height:     70px;
+}
+
+#contact-head{
+    margin: 9% auto 2% 12%; /* try to position the contact form header like the rest of the pages */
+}
+
+#contact-form{
+    border:     medium dashed #3a3a3a;
+    margin:     auto;
+    display:    flex;
+    padding:    2.5vw;
+    width:      84.7vw;
+}
+
+#contact-form textarea{
+    max-width:      85vw;
+    max-height:     20vh;
+    font-family:    sans-serif;
+    resize:         none;       /* don't allow textareas to be resizable */
+}
+
+#contact-form label{
+    display:        inline-block;   /* so the labels and textareas can be next ot each other */
+    width:          20vw;
+    margin:         auto;
+    text-align:     right;
+    vertical-align: top;
+}
+
+h1{
+    transition: 200ms;
+    font-size:  4rem;
+    width:      fit-content;
+    color:      #49bb45;
+    margin-left: 4%;
+}
+
+#page{
+    transition: 200ms;
+    margin-top: 15vh;
+}
+
+#page-contents{
+    display:        inline-block;
+    width:          45vw;
+    margin-left:    100px;
+}
+
+#head-text{
+    margin: 2% auto 0px 12%;
+}
+
+#paragraphs{
+    margin:     auto;
+    padding:    10px;
+    max-width:  60vw;
+}
+
+#page-image{
+    float:          right;
+    margin:         2% 2% 0px auto;
+    max-height:     40vh;
+    max-width:      10vw;
+    border-radius:  10px;
+    max-width:      36vw;
+    object-fit:     cover;
+}
+
+#attr-link{
+    position:       absolute;
+    bottom:         0;
+    right:          0;
+    padding-right:  1vw;
+    padding-bottom: 1vh;
+}
+
+@media (max-width: 840px) {
+    #logo img{
+        height: 40px;
+    }
+    h1{
+        transition: 200ms;
+        font-size:  3rem;
+    }
+    #page-contents{
+        width:  50vw;
+    }
+    #page-image{
+        transition: 200ms;
+        max-width:  30vw;
+    }
+    #page{
+        transition: 200ms;
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width: 660px) {
+    #logo{
+        position:       absolute;
+        transition:     250ms;
+        left:           0;
+        right:          0;
+        margin-inline:  auto;
+        width:          fit-content;
+    }
+    h1{
+        transition: 200ms;
+        font-size:  2rem;
+    }
+    #contact-form textarea{
+        max-width:      50vw;
+        max-height:     20vh;
+        font-family:    sans-serif;
+        resize:         none;
+    }
+    #page-contents{
+        margin: auto;
+        width:  100vw;
+        padding-top: 5vh;
+    }
+    
+    #head-text{
+        margin: 2% auto 0px 7%;
+    }
+    
+    #paragraphs{
+        margin:     auto;
+        padding:    10px;
+    }
+    #page-image{
+        float: left;
+        min-width:      100vw;
+        max-width:      100vw;
+        max-height:     40vw;
+        margin-top:     0px;
+        border-radius:  0px 0px 10px 10px;
+    }
+    #page{
+        transition: 200ms;
+        margin-top: 0px;
+    }
+}
