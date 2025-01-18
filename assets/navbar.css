@@ -41,6 +41,7 @@
     background-color:   #5c74ff;
 }
 
+/* at this width, the navbar should go under the logo */
 @media (max-width: 660px) {
     #navbar a{
         transition:         250ms;

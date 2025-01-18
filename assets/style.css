@@ -44,7 +44,7 @@ body{
 }
 
 #contact-form label{
-    display:        inline-block;   /* so the labels and textareas can be next ot each other */
+    display:        inline-block;   /* this is so the labels and textareas can be next to  each other */
     width:          20vw;
     margin:         auto;
     text-align:     right;
@@ -64,6 +64,7 @@ h1{
     margin-top: 15vh;
 }
 
+/* putting the header and paragraphs on the left of the page */
 #page-contents{
     display:        inline-block;
     width:          45vw;
@@ -80,6 +81,7 @@ h1{
     max-width:  60vw;
 }
 
+/* putting the image on the right of the page */
 #page-image{
     float:          right;
     margin:         2% 2% 0px auto;
@@ -90,6 +92,7 @@ h1{
     object-fit:     cover;
 }
 
+/* putting the credits link in the bottom corner of every page */
 #attr-link{
     position:       absolute;
     bottom:         0;
@@ -98,27 +101,34 @@ h1{
     padding-bottom: 1vh;
 }
 
+/* at this width, things just get a little bit smaller */
 @media (max-width: 840px) {
     #logo img{
         height: 40px;
     }
+
     h1{
         transition: 200ms;
         font-size:  3rem;
     }
+
     #page-contents{
         width:  50vw;
     }
+
     #page-image{
         transition: 200ms;
         max-width:  30vw;
     }
+
     #page{
         transition: 200ms;
         margin-top: 10vh;
     }
 }
 
+
+/* this is around the start of the mobile layout */
 @media (max-width: 660px) {
     #logo{
         position:       absolute;
@@ -128,6 +138,7 @@ h1{
         margin-inline:  auto;
         width:          fit-content;
     }
+
     h1{
         transition: 200ms;
         font-size:  2rem;
@@ -138,6 +149,7 @@ h1{
         font-family:    sans-serif;
         resize:         none;
     }
+
     #page-contents{
         margin: auto;
         width:  100vw;
@@ -152,6 +164,8 @@ h1{
         margin:     auto;
         padding:    10px;
     }
+
+    /* the image gets moved to the top and takes up the whole width of the screen in this layout */
     #page-image{
         float: left;
         min-width:      100vw;
@@ -160,6 +174,7 @@ h1{
         margin-top:     0px;
         border-radius:  0px 0px 10px 10px;
     }
+
     #page{
         transition: 200ms;
         margin-top: 0px;
